@@ -17,3 +17,14 @@ Pros of distribuited computing:
 -For legal, privacy and political reasons, sometimes you must have a backup of the information, or avoid being within the reach of a physical team, which is easily vulnerable.
 -For times of activity, the server will always be active even if the offices are not open.
 
+#3rd video - https://youtu.be/BkSdD5VtyRM
+How to learn distributed systems?
+It is important to understand that distributed systems are an experimental science and not just something theoretical.That is why current distributed systems are born and from debugging and modifying systems and modifications.
+
+Systems fail! That is why our system must have fault tolerance.
+
+One of the great challenges in distributed computing is to get computers to communicate with each other correctly. for which two models have been developed, the shared memory model and the message passing model.
+
+
+
+
