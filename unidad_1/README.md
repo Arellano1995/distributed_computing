@@ -25,6 +25,39 @@ Systems fail! That is why our system must have fault tolerance.
 
 One of the great challenges in distributed computing is to get computers to communicate with each other correctly. for which two models have been developed, the shared memory model and the message passing model.
 
+#4th video - https://youtu.be/C8nLSLs0fNw 
+What could go wrong?
+If you want to develop a system with fault tolerance, prime should know what are the possible failures.
+Some of these failures are:
+- Crash.
+- Crashloop.
+- Data Corruption.
+- Server Down.
+- Query of Death.
+- Broken Dependency.
+- Cystiner Reported Failure.
+- Data Loss.
+- Time Travel.
+- 0wned
+- Natural Disaster
+- Cause Infrastructure failure.
+- Police Raid.
+- Operator Error.
+- RunaWay Automation.
+- Certificate Expires.
+- Fail to Pay Bills.
+- Non-Linear Rsponse to Change.
+- Performance Cliffs.
+- VIP.
+- DoS Attack.
+- Cascading Failure.
+- Heisenbug.
+- Neon-Hermetic Builds.
+- Firewalls.
+- Kernel Memory Leak.
+- Hash Collision.
+- Incorrect Algorithm.
 
+Some of these failures are anecdotal in terms of frequency of occurrence, while others occur on a regular basis and therefore we must consent to our efforts to solve them in our system.
 
 
