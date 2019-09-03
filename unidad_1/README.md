@@ -60,4 +60,13 @@ Some of these failures are:
 
 Some of these failures are anecdotal in terms of frequency of occurrence, while others occur on a regular basis and therefore we must consent to our efforts to solve them in our system.
 
+#5 The many types of fail https://youtu.be/MnYlwjuGcg8
+How to Divide many failures into categories
+- Network failures
+- Backup fail most common failure
+- Security warranty like criptography
+- Two things you it can gave you
+1. A warranty that the network will always get to you and 2. Performance warranties problems.
+- Loss of connectivity
+Consider a network where a node is connected to a different node. If a node goes down, we loss connectivity between one sub graph and the other sub graph. The components of system can run but can't communicate each other. You can create a code where when Communication resumes, the processes they had may somehow, weave the system back again it's called "tolerating a consistent state".
 
