@@ -95,3 +95,9 @@ An advantage of using the Google engine is that it keeps the system running. The
 However, if we do not want Google to be the means of login. Check the follow link.
 distributedsystemscourse.com/dschat
 This is the uWSGI version. By using socket you can transmit the messages from client to server. This version also has its advantages it fits a fixed cost, it's a very simple system. It's disadvantage, it doesn't have authentication and have a problem with scalability.
+
+
+# Video 7 - https://youtu.be/SRsK-ZXTeZ0
+Paxos simplified
+
+The simplified Paxos algorithm is an adapted version of the Byzantine algorithm, in order to be tolerant of stop failures, the number of nodes that must ratify the operation must be (2f + 1), where `` f '' is the number of system failures, this is a 25% improvement over Byzantine, and Paxos maintains an instant failover.
