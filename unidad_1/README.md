@@ -1,3 +1,4 @@
+
 #Summary of the videos
 
 #1st video https://youtu.be/7VbL89mKK3M
@@ -97,7 +98,12 @@ distributedsystemscourse.com/dschat
 This is the uWSGI version. By using socket you can transmit the messages from client to server. This version also has its advantages it fits a fixed cost, it's a very simple system. It's disadvantage, it doesn't have authentication and have a problem with scalability.
 
 
-# Video 7 - https://youtu.be/SRsK-ZXTeZ0
+# Video 9 - https://youtu.be/SRsK-ZXTeZ0
 Paxos simplified
 
 The simplified Paxos algorithm is an adapted version of the Byzantine algorithm, in order to be tolerant of stop failures, the number of nodes that must ratify the operation must be (2f + 1), where `` f '' is the number of system failures, this is a 25% improvement over Byzantine, and Paxos maintains an instant failover.
+
+# Video 10 - https://youtu.be/GX4595KeZyc
+How Counterstrike Works (Time in Distributed Systems)
+
+Uno de los grandes problemas que presenta el cómputo distribuido es el LAG, por ejemplo en el sistema distribuido más sencillo, donde la información va del PC al Servidor y después regresa, podemos apreciar un LAG importante, el cual aumenta de forma proporcional a la distancia existente entre el cliente y el servidor. Para solucionar este inconveniente se han desarrollado una serie de trucos, por ejemplo; la predicción de eventos, donde el servidor realiza una predicción de las instrucciones siguientes del cliente, si acierta el sistema funciona con mayor fluidez, de no ser así, el sistema rectifica la decisión. Otra forma de combatir el LAG es mediante la compensación del LAg, el servidor mantiene un buffer de la información anterior de los clientes.
