@@ -79,3 +79,19 @@ This fault tolerance system is very useful, especially in distributed systems wh
 Usually, we create a distributed system to improve the performance and reliability unlike a centralized system. SLIs, SLOs, and SLAs help us to measuring the reliability and performance of the system, if you don't measure how wll you're doing you'll never know wheter you've achied this goal or not.
 SLAs can be interpreted by the user as a message that tells how the operation is. For example, how often do you check that the system is up? and, what does it mean to be up?. If you promise to fix a system failure within 22 minutes. The time you mentioned must be precise and reliable by the end user. 
 Never promise that you will take less time to repair a system failure if you really can't.
+
+# Video 8 Class project https://youtu.be/QyKK8lcpzVQ
+Creating a chat 
+A example of a distributed chat
+Go to distribuitedchat.appspot.com
+Login with your Google account
+And you can look up the page and see how it works.
+It looks easy than it is, the chat uses Google's app engine infrastructure.
+The chat works through two parts. The client side, which uses HTML and Javascript code and the server side which uses Python.
+In addition the information is stored in a database. The infrastructure also provides a channel termination which allows communication between the app engine and the chat messages.
+Also, use user authentication, a search engine and the billing system.
+An advantage of using the Google engine is that it keeps the system running. The disadvantage is that it has a cost.
+
+However, if we do not want Google to be the means of login. Check the follow link.
+distributedsystemscourse.com/dschat
+This is the uWSGI version. By using socket you can transmit the messages from client to server. This version also has its advantages it fits a fixed cost, it's a very simple system. It's disadvantage, it doesn't have authentication and have a problem with scalability.
