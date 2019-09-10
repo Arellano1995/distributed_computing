@@ -118,12 +118,19 @@ What is a Blockchain?
 
 It is a considerably simple data structure, in this the information is divided into blocks, the first of these blocks is assigned an empty header, a second block will be formed with the new data, the second block will be placed in the header a cryptographic hash of the first block, and so on. Thanks to the ease of recalculating and being almost impossible to violate a block without detecting it with the validation of the next block.
 
-# Video 13
+# Video 13 Bitcoin Blockchain Consensus https://youtu.be/f1ZJPEKeTEY
 Consensus algorithms
 Paxos
 Raft
 Practical Byzantine fault tolerance
 Use one of this algorithms to make a consensus.
 A problem would be if several computers left you on the road could not achieve consensus since they would not have the votes or worse, if they are in several bad computers and vote in arbitrary ways and stop your system in achieving consensus.
+If this happens, it will be necessary to use a new consensus. Bitcoin needs an algorithm that is resistant to attacks.
 
-Bitcoin should be able to make consensus on every round of the algorithm.
+Solving livelock
+One solution to the problem of adding blocks and not causing livelock is by adding a timer, although it's not the most optimal solution. If it is long, the system will take longer to reach consensus. Long timers are bad because they slow us down but long timers are good because they decrease the number of forks.
+Another problem that may arise is that there is a partition and it cannot communicate with the other blocks.
+The other blocks will continue to add blocks just as the partition will add its own blocks, when the communication has been resumed, the changes will be added to the partition and the blocks that it has had will die.
+
+Now, what happens if a computer cheats? Can you build a cheat-resistant timer?
+You can use cryptography or trusted computing module.
