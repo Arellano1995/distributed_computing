@@ -112,3 +112,8 @@ Uno de los grandes problemas que presenta el cómputo distribuido es el LAG, por
 
 This video gives us a introduction to Blockchain.
 Blockchain says that you don't need to understand the paxos algorithm or that it solves problems like the byzantine fault.Also, explains the bitcoin blockchain data structure, how to create blockchain in one computer and move it to another computer forming what its called a consensus.
+
+# Video 12 - https://youtu.be/Jp7T9qtuRIE
+What is a Blockchain?
+
+It is a considerably simple data structure, in this the information is divided into blocks, the first of these blocks is assigned an empty header, a second block will be formed with the new data, the second block will be placed in the header a cryptographic hash of the first block, and so on. Thanks to the ease of recalculating and being almost impossible to violate a block without detecting it with the validation of the next block.
