@@ -117,3 +117,13 @@ Blockchain says that you don't need to understand the paxos algorithm or that it
 What is a Blockchain?
 
 It is a considerably simple data structure, in this the information is divided into blocks, the first of these blocks is assigned an empty header, a second block will be formed with the new data, the second block will be placed in the header a cryptographic hash of the first block, and so on. Thanks to the ease of recalculating and being almost impossible to violate a block without detecting it with the validation of the next block.
+
+# Video 13
+Consensus algorithms
+Paxos
+Raft
+Practical Byzantine fault tolerance
+Use one of this algorithms to make a consensus.
+A problem would be if several computers left you on the road could not achieve consensus since they would not have the votes or worse, if they are in several bad computers and vote in arbitrary ways and stop your system in achieving consensus.
+
+Bitcoin should be able to make consensus on every round of the algorithm.
