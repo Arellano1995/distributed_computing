@@ -134,3 +134,10 @@ The other blocks will continue to add blocks just as the partition will add its 
 
 Now, what happens if a computer cheats? Can you build a cheat-resistant timer?
 You can use cryptography or trusted computing module.
+
+# Video 14 - https://youtu.be/MVPkHPEsC4Y
+Should you use Bitcoin consensus?
+
+Despite the virtues that Bitcoin offers, it is not a replacement for other algorithms such as PAXOS, since at the end of the day for Bitcoin to work properly it requires a large number of users and that these are safe users.
+
+In addition, if Bitcoin is compared with other algorithms, we find that the latter have greater efficiency and effectiveness in terms of performance. Another limitation of Bitcoin in the time it takes to permanently save the information of a block, as this is saved in the next. With this in mind it seems obvious that Bitcoin will have a higher electricity consumption, but it is more than we can think at first, it is not only the amount of computers that are in use, but also the time that they are really active.
