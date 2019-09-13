@@ -141,3 +141,13 @@ Should you use Bitcoin consensus?
 Despite the virtues that Bitcoin offers, it is not a replacement for other algorithms such as PAXOS, since at the end of the day for Bitcoin to work properly it requires a large number of users and that these are safe users.
 
 In addition, if Bitcoin is compared with other algorithms, we find that the latter have greater efficiency and effectiveness in terms of performance. Another limitation of Bitcoin in the time it takes to permanently save the information of a block, as this is saved in the next. With this in mind it seems obvious that Bitcoin will have a higher electricity consumption, but it is more than we can think at first, it is not only the amount of computers that are in use, but also the time that they are really active.
+
+#Video 16 The CAP Theorem https://youtu.be/k-Yaq8AHlFA
+CAP theorem states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees:
+
+Consistency: Every read receives the most recent write or an error.
+Availability: Every request receives a (non-error) response, without the guarantee that it contains the most recent write.
+Partition tolerance: The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes.
+
+In the video, we present an example of two ATMs, which communicate the deposits with each other. If you are going to make an action to the ATM A or if there is no connection to the ATM B and it does not work you can simply show a message of unavailable. Or if even worse, if both fell they work but there is no communication, then a partition is created.
+When you design your system if there never are partitions you can make the system both consisten and available, but if there's a partition you've got to choose. You either have a consistent design, or an available design.
