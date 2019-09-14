@@ -142,7 +142,12 @@ Despite the virtues that Bitcoin offers, it is not a replacement for other algor
 
 In addition, if Bitcoin is compared with other algorithms, we find that the latter have greater efficiency and effectiveness in terms of performance. Another limitation of Bitcoin in the time it takes to permanently save the information of a block, as this is saved in the next. With this in mind it seems obvious that Bitcoin will have a higher electricity consumption, but it is more than we can think at first, it is not only the amount of computers that are in use, but also the time that they are really active.
 
-#Video 16 The CAP Theorem https://youtu.be/k-Yaq8AHlFA
+# Video 15 - https://youtu.be/W6qURtqrldc
+Distributed System Design Example (Unique ID)
+
+For a large-scale distributed system, the existence of a unique transaction identifier is useful for the different computers that make up the network. So how is a unique identifier achieved? A good way to do this is to use the smallest unit of time we have available and concatenate it with an identifier of the computer such as the series of our processor, IP, or MAC address, but if we think about it carefully, there is no efficient way to achieve it in a distributed way because to ensure that the unique identifier requires asking and confirming with the other servers which always generates an increase in network traffic, so we can always use the UUID functions or GUID, which are offered by operating systems to obtain a unique identifier.
+
+# Video 16 The CAP Theorem https://youtu.be/k-Yaq8AHlFA
 CAP theorem states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees:
 
 Consistency: Every read receives the most recent write or an error.
