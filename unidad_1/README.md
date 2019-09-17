@@ -1,7 +1,7 @@
 
-#Summary of the videos
+# Summary of the videos
 
-#1st video https://youtu.be/7VbL89mKK3M
+# 1st video https://youtu.be/7VbL89mKK3M
 The first video is an introduction to distributed computing, it gives us the definition of distributed computing and its advantages,
 and the difference between centralized and distributed.
 Pros of centralized computing:
@@ -10,7 +10,7 @@ Pros of distribuited computing:
 -Can support many user(computers)
 -Tolerate failures
 
-#2nd video - https://youtu.be/pMQzLVK39Kk
+# 2nd video - https://youtu.be/pMQzLVK39Kk
 10 reasons to use a distributed system.
 -At the request of the boss.
 -It's fun, because it makes work easier.
@@ -18,7 +18,7 @@ Pros of distribuited computing:
 -For legal, privacy and political reasons, sometimes you must have a backup of the information, or avoid being within the reach of a physical team, which is easily vulnerable.
 -For times of activity, the server will always be active even if the offices are not open.
 
-#3rd video - https://youtu.be/BkSdD5VtyRM
+# 3rd video - https://youtu.be/BkSdD5VtyRM
 How to learn distributed systems?
 It is important to understand that distributed systems are an experimental science and not just something theoretical.That is why current distributed systems are born and from debugging and modifying systems and modifications.
 
@@ -26,7 +26,7 @@ Systems fail! That is why our system must have fault tolerance.
 
 One of the great challenges in distributed computing is to get computers to communicate with each other correctly. for which two models have been developed, the shared memory model and the message passing model.
 
-#4th video - https://youtu.be/C8nLSLs0fNw 
+# 4th video - https://youtu.be/C8nLSLs0fNw 
 What could go wrong?
 If you want to develop a system with fault tolerance, prime should know what are the possible failures.
 Some of these failures are:
@@ -61,7 +61,7 @@ Some of these failures are:
 
 Some of these failures are anecdotal in terms of frequency of occurrence, while others occur on a regular basis and therefore we must consent to our efforts to solve them in our system.
 
-#5 The many types of fail https://youtu.be/MnYlwjuGcg8
+# 5 The many types of fail https://youtu.be/MnYlwjuGcg8
 How to Divide many failures into categories
 - Network failures
 - Backup fail most common failure
@@ -71,12 +71,12 @@ How to Divide many failures into categories
 - Loss of connectivity
 Consider a network where a node is connected to a different node. If a node goes down, we loss connectivity between one sub graph and the other sub graph. The components of system can run but can't communicate each other. You can create a code where when Communication resumes, the processes they had may somehow, weave the system back again it's called "tolerating a consistent state".
 
-#Video 6 - https://youtu.be/_e4wNoTV3Gw
+# Video 6 - https://youtu.be/_e4wNoTV3Gw
 Byzantine Fault Tolerance  
 
 This fault tolerance system is very useful, especially in distributed systems where there are a large number of components or nodes in the game, so when some of these nodes fail or are violated, algorithms such as: PoW (Job Test) are used. and PoS (Stake Test), these works with the logic of the Byzantine generals, that in a nutshell, each node receives an order, and, in turn, this node issues the same order to the other nodes, even if a node will fail and deliver a different result, the correct result can be determined, assuming that the result that appears most frequently is correct.
 
-#7 SLIs SLOs and SLAs https://youtu.be/LKpIirL8f-I
+# 7 SLIs SLOs and SLAs https://youtu.be/LKpIirL8f-I
 Usually, we create a distributed system to improve the performance and reliability unlike a centralized system. SLIs, SLOs, and SLAs help us to measuring the reliability and performance of the system, if you don't measure how wll you're doing you'll never know wheter you've achied this goal or not.
 SLAs can be interpreted by the user as a message that tells how the operation is. For example, how often do you check that the system is up? and, what does it mean to be up?. If you promise to fix a system failure within 22 minutes. The time you mentioned must be precise and reliable by the end user. 
 Never promise that you will take less time to repair a system failure if you really can't.
