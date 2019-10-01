@@ -1,9 +1,9 @@
 
 # Summary of the videos
-- [What is a distributed system?](#what-is-a-distributed-system?) 
-- [Why build a distributed system?](#why-build-a-distributed-system?)
+- [What is a distributed system?](#what-is-a-distributed-system) 
+- [Why build a distributed system?](#why-build-a-distributed-system)
 - [How to learn distributed systems](#how-to-learn-distributed-systems)
-- [What could go wrong?](#what-could-go-wrong?)
+- [What could go wrong?](#what-could-go-wrong)
 - [The many types of fail](#the-many-types-of-fail)
 - [Byzantine Fault Tolerance](#byzantine-fault-tolerance)
 - [SLIs SLOs and SLAs](#slis-slos-and-slas)
@@ -11,13 +11,13 @@
 - [Paxos Simplified](#paxos-simplified)
 - [How Counterstrike Works](#how-counterstrike-works)
 - [Introduction to Blockchain Consensus](#introduction-to-blockchain-consensus)
-- [What is a Blockchain?](#what-is-a-blockchain?)
+- [What is a Blockchain?](#what-is-a-blockchain)
 - [Bitcoin Blockchain Consensus](#bitcoin-blockchain-consensus)
-- [Should you use Bitcoin consensus?](#should-you-use-bitcoin-consensus?)
+- [Should you use Bitcoin consensus?](#should-you-use-bitcoin-consensus)
 - [Distributed System Design Example](#distributed-system-design-example)
 - [The CAP Theorem](#the-cap-theorem)
 
-## What is a distributed system? ## 
+## What is a distributed system ## 
 The first video is an introduction to distributed computing, it gives us the definition of distributed computing and its advantages,
 and the difference between centralized and distributed.
 Pros of centralized computing:
@@ -27,7 +27,7 @@ Pros of distribuited computing:
 -Tolerate failures
 [Youtube ](https://youtu.be/7VbL89mKK3M)
 
-## Why build a distributed system? ##
+## Why build a distributed system ##
 10 reasons to use a distributed system.
 -At the request of the boss.
 -It's fun, because it makes work easier.
@@ -45,7 +45,7 @@ Systems fail! That is why our system must have fault tolerance.
 One of the great challenges in distributed computing is to get computers to communicate with each other correctly. for which two models have been developed, the shared memory model and the message passing model.
 [Youtube ](https://youtu.be/BkSdD5VtyRM)
 
-## What could go wrong? ##
+## What could go wrong ##
 If you want to develop a system with fault tolerance, prime should know what are the possible failures.
 Some of these failures are:
 - Crash.
@@ -139,7 +139,7 @@ This video gives us a introduction to Blockchain.
 Blockchain says that you don't need to understand the paxos algorithm or that it solves problems like the byzantine fault.Also, explains the bitcoin blockchain data structure, how to create blockchain in one computer and move it to another computer forming what its called a consensus.
 [Youtube ](https://youtu.be/LFZDpF_A-BE)
 
-## What is a Blockchain? ##
+## What is a Blockchain ##
 What is a Blockchain?
 
 It is a considerably simple data structure, in this the information is divided into blocks, the first of these blocks is assigned an empty header, a second block will be formed with the new data, the second block will be placed in the header a cryptographic hash of the first block, and so on. Thanks to the ease of recalculating and being almost impossible to violate a block without detecting it with the validation of the next block.
@@ -163,7 +163,7 @@ Now, what happens if a computer cheats? Can you build a cheat-resistant timer?
 You can use cryptography or trusted computing module.
 [Youtube ](https://youtu.be/f1ZJPEKeTEY)
 
-## Should you use Bitcoin consensus? ##
+## Should you use Bitcoin consensus ##
 
 Despite the virtues that Bitcoin offers, it is not a replacement for other algorithms such as PAXOS, since at the end of the day for Bitcoin to work properly it requires a large number of users and that these are safe users.
 
