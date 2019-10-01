@@ -80,7 +80,7 @@ Some of these failures are:
 Some of these failures are anecdotal in terms of frequency of occurrence, while others occur on a regular basis and therefore we must consent to our efforts to solve them in our system.
 [Youtube ](https://youtu.be/C8nLSLs0fNw)
 
-## 5 The many types of fail ##
+## The many types of fail ##
 How to Divide many failures into categories
 - Network failures
 - Backup fail most common failure
@@ -127,13 +127,13 @@ Paxos simplified
 The simplified Paxos algorithm is an adapted version of the Byzantine algorithm, in order to be tolerant of stop failures, the number of nodes that must ratify the operation must be (2f + 1), where `` f '' is the number of system failures, this is a 25% improvement over Byzantine, and Paxos maintains an instant failover.
 [Youtube ](https://youtu.be/SRsK-ZXTeZ0)
 
-## How Counterstrike Works (Time in Distributed Systems)  ##
+## How Counterstrike Works ##
 How Counterstrike Works (Time in Distributed Systems)
 
 Uno de los grandes problemas que presenta el cómputo distribuido es el LAG, por ejemplo en el sistema distribuido más sencillo, donde la información va del PC al Servidor y después regresa, podemos apreciar un LAG importante, el cual aumenta de forma proporcional a la distancia existente entre el cliente y el servidor. Para solucionar este inconveniente se han desarrollado una serie de trucos, por ejemplo; la predicción de eventos, donde el servidor realiza una predicción de las instrucciones siguientes del cliente, si acierta el sistema funciona con mayor fluidez, de no ser así, el sistema rectifica la decisión. Otra forma de combatir el LAG es mediante la compensación del LAg, el servidor mantiene un buffer de la información anterior de los clientes.
 [Youtube ](https://youtu.be/GX4595KeZyc)
 
-## Introduction to Blockchain Consensus Link ##
+## Introduction to Blockchain Consensus ##
 
 This video gives us a introduction to Blockchain.
 Blockchain says that you don't need to understand the paxos algorithm or that it solves problems like the byzantine fault.Also, explains the bitcoin blockchain data structure, how to create blockchain in one computer and move it to another computer forming what its called a consensus.
@@ -170,7 +170,7 @@ Despite the virtues that Bitcoin offers, it is not a replacement for other algor
 In addition, if Bitcoin is compared with other algorithms, we find that the latter have greater efficiency and effectiveness in terms of performance. Another limitation of Bitcoin in the time it takes to permanently save the information of a block, as this is saved in the next. With this in mind it seems obvious that Bitcoin will have a higher electricity consumption, but it is more than we can think at first, it is not only the amount of computers that are in use, but also the time that they are really active.
 [Youtube ](https://youtu.be/MVPkHPEsC4Y)
 
-## Distributed System Design Example (Unique ID) ##
+## Distributed System Design Example ##
 
 For a large-scale distributed system, the existence of a unique transaction identifier is useful for the different computers that make up the network. So how is a unique identifier achieved? A good way to do this is to use the smallest unit of time we have available and concatenate it with an identifier of the computer such as the series of our processor, IP, or MAC address, but if we think about it carefully, there is no efficient way to achieve it in a distributed way because to ensure that the unique identifier requires asking and confirming with the other servers which always generates an increase in network traffic, so we can always use the UUID functions or GUID, which are offered by operating systems to obtain a unique identifier.
 [Youtube ](https://youtu.be/W6qURtqrldc)
