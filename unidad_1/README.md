@@ -26,7 +26,7 @@ Systems fail! That is why our system must have fault tolerance.
 
 One of the great challenges in distributed computing is to get computers to communicate with each other correctly. for which two models have been developed, the shared memory model and the message passing model.
 
-# 4th video - https://youtu.be/C8nLSLs0fNw 
+# 4th video - https://youtu.be/C8nLSLs0fNw
 What could go wrong?
 If you want to develop a system with fault tolerance, prime should know what are the possible failures.
 Some of these failures are:
@@ -78,11 +78,11 @@ This fault tolerance system is very useful, especially in distributed systems wh
 
 # 7 SLIs SLOs and SLAs https://youtu.be/LKpIirL8f-I
 Usually, we create a distributed system to improve the performance and reliability unlike a centralized system. SLIs, SLOs, and SLAs help us to measuring the reliability and performance of the system, if you don't measure how wll you're doing you'll never know wheter you've achied this goal or not.
-SLAs can be interpreted by the user as a message that tells how the operation is. For example, how often do you check that the system is up? and, what does it mean to be up?. If you promise to fix a system failure within 22 minutes. The time you mentioned must be precise and reliable by the end user. 
+SLAs can be interpreted by the user as a message that tells how the operation is. For example, how often do you check that the system is up? and, what does it mean to be up?. If you promise to fix a system failure within 22 minutes. The time you mentioned must be precise and reliable by the end user.
 Never promise that you will take less time to repair a system failure if you really can't.
 
 # Video 8 Class project https://youtu.be/QyKK8lcpzVQ
-Creating a chat 
+Creating a chat
 A example of a distributed chat
 Go to distribuitedchat.appspot.com
 Login with your Google account
@@ -156,3 +156,8 @@ Partition tolerance: The system continues to operate despite an arbitrary number
 
 In the video, we present an example of two ATMs, which communicate the deposits with each other. If you are going to make an action to the ATM A or if there is no connection to the ATM B and it does not work you can simply show a message of unavailable. Or if even worse, if both fell they work but there is no communication, then a partition is created.
 When you design your system if there never are partitions you can make the system both consisten and available, but if there's a partition you've got to choose. You either have a consistent design, or an available design.
+
+## Authors
+
+* **Jose Arellano** - [Github](https://github.com/Arellano1995)
+* **Lilia Rosales** - [Github](https://github.com/liliarsis)
