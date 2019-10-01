@@ -1,7 +1,9 @@
 
 # Summary of the videos
+[Video 1 ](#What-is-a-distributed-system?) 
 
-# 1st video https://youtu.be/7VbL89mKK3M
+## What is a distributed system? ##
+[Youtube ](https://youtu.be/7VbL89mKK3M) 
 The first video is an introduction to distributed computing, it gives us the definition of distributed computing and its advantages,
 and the difference between centralized and distributed.
 Pros of centralized computing:
@@ -10,7 +12,7 @@ Pros of distribuited computing:
 -Can support many user(computers)
 -Tolerate failures
 
-# 2nd video - https://youtu.be/pMQzLVK39Kk
+## 2nd video - https://youtu.be/pMQzLVK39Kk ##
 10 reasons to use a distributed system.
 -At the request of the boss.
 -It's fun, because it makes work easier.
@@ -18,7 +20,7 @@ Pros of distribuited computing:
 -For legal, privacy and political reasons, sometimes you must have a backup of the information, or avoid being within the reach of a physical team, which is easily vulnerable.
 -For times of activity, the server will always be active even if the offices are not open.
 
-# 3rd video - https://youtu.be/BkSdD5VtyRM
+## 3rd video - https://youtu.be/BkSdD5VtyRM ##
 How to learn distributed systems?
 It is important to understand that distributed systems are an experimental science and not just something theoretical.That is why current distributed systems are born and from debugging and modifying systems and modifications.
 
@@ -26,7 +28,7 @@ Systems fail! That is why our system must have fault tolerance.
 
 One of the great challenges in distributed computing is to get computers to communicate with each other correctly. for which two models have been developed, the shared memory model and the message passing model.
 
-# 4th video - https://youtu.be/C8nLSLs0fNw
+## 4th video - https://youtu.be/C8nLSLs0fNw ##
 What could go wrong?
 If you want to develop a system with fault tolerance, prime should know what are the possible failures.
 Some of these failures are:
@@ -61,7 +63,7 @@ Some of these failures are:
 
 Some of these failures are anecdotal in terms of frequency of occurrence, while others occur on a regular basis and therefore we must consent to our efforts to solve them in our system.
 
-# 5 The many types of fail https://youtu.be/MnYlwjuGcg8
+## 5 The many types of fail https://youtu.be/MnYlwjuGcg8 ##
 How to Divide many failures into categories
 - Network failures
 - Backup fail most common failure
@@ -71,17 +73,17 @@ How to Divide many failures into categories
 - Loss of connectivity
 Consider a network where a node is connected to a different node. If a node goes down, we loss connectivity between one sub graph and the other sub graph. The components of system can run but can't communicate each other. You can create a code where when Communication resumes, the processes they had may somehow, weave the system back again it's called "tolerating a consistent state".
 
-# Video 6 - https://youtu.be/_e4wNoTV3Gw
+## Video 6 - https://youtu.be/_e4wNoTV3Gw ##
 Byzantine Fault Tolerance  
 
 This fault tolerance system is very useful, especially in distributed systems where there are a large number of components or nodes in the game, so when some of these nodes fail or are violated, algorithms such as: PoW (Job Test) are used. and PoS (Stake Test), these works with the logic of the Byzantine generals, that in a nutshell, each node receives an order, and, in turn, this node issues the same order to the other nodes, even if a node will fail and deliver a different result, the correct result can be determined, assuming that the result that appears most frequently is correct.
 
-# 7 SLIs SLOs and SLAs https://youtu.be/LKpIirL8f-I
+## 7 SLIs SLOs and SLAs https://youtu.be/LKpIirL8f-I ##
 Usually, we create a distributed system to improve the performance and reliability unlike a centralized system. SLIs, SLOs, and SLAs help us to measuring the reliability and performance of the system, if you don't measure how wll you're doing you'll never know wheter you've achied this goal or not.
 SLAs can be interpreted by the user as a message that tells how the operation is. For example, how often do you check that the system is up? and, what does it mean to be up?. If you promise to fix a system failure within 22 minutes. The time you mentioned must be precise and reliable by the end user.
 Never promise that you will take less time to repair a system failure if you really can't.
 
-# Video 8 Class project https://youtu.be/QyKK8lcpzVQ
+## Video 8 Class project https://youtu.be/QyKK8lcpzVQ ##
 Creating a chat
 A example of a distributed chat
 Go to distribuitedchat.appspot.com
@@ -98,27 +100,27 @@ distributedsystemscourse.com/dschat
 This is the uWSGI version. By using socket you can transmit the messages from client to server. This version also has its advantages it fits a fixed cost, it's a very simple system. It's disadvantage, it doesn't have authentication and have a problem with scalability.
 
 
-# Video 9 - https://youtu.be/SRsK-ZXTeZ0
+## Video 9 - https://youtu.be/SRsK-ZXTeZ0 ##
 Paxos simplified
 
 The simplified Paxos algorithm is an adapted version of the Byzantine algorithm, in order to be tolerant of stop failures, the number of nodes that must ratify the operation must be (2f + 1), where `` f '' is the number of system failures, this is a 25% improvement over Byzantine, and Paxos maintains an instant failover.
 
-# Video 10 - https://youtu.be/GX4595KeZyc
+## Video 10 - https://youtu.be/GX4595KeZyc ##
 How Counterstrike Works (Time in Distributed Systems)
 
 Uno de los grandes problemas que presenta el cómputo distribuido es el LAG, por ejemplo en el sistema distribuido más sencillo, donde la información va del PC al Servidor y después regresa, podemos apreciar un LAG importante, el cual aumenta de forma proporcional a la distancia existente entre el cliente y el servidor. Para solucionar este inconveniente se han desarrollado una serie de trucos, por ejemplo; la predicción de eventos, donde el servidor realiza una predicción de las instrucciones siguientes del cliente, si acierta el sistema funciona con mayor fluidez, de no ser así, el sistema rectifica la decisión. Otra forma de combatir el LAG es mediante la compensación del LAg, el servidor mantiene un buffer de la información anterior de los clientes.
 
-# Video 11 Introduction to Blockchain Consensus Link: https://youtu.be/LFZDpF_A-BE
+## Video 11 Introduction to Blockchain Consensus Link: https://youtu.be/LFZDpF_A-BE ##
 
 This video gives us a introduction to Blockchain.
 Blockchain says that you don't need to understand the paxos algorithm or that it solves problems like the byzantine fault.Also, explains the bitcoin blockchain data structure, how to create blockchain in one computer and move it to another computer forming what its called a consensus.
 
-# Video 12 - https://youtu.be/Jp7T9qtuRIE
+## Video 12 - https://youtu.be/Jp7T9qtuRIE ##
 What is a Blockchain?
 
 It is a considerably simple data structure, in this the information is divided into blocks, the first of these blocks is assigned an empty header, a second block will be formed with the new data, the second block will be placed in the header a cryptographic hash of the first block, and so on. Thanks to the ease of recalculating and being almost impossible to violate a block without detecting it with the validation of the next block.
 
-# Video 13 Bitcoin Blockchain Consensus https://youtu.be/f1ZJPEKeTEY
+## Video 13 Bitcoin Blockchain Consensus https://youtu.be/f1ZJPEKeTEY ##
 Consensus algorithms
 Paxos
 Raft
@@ -135,19 +137,19 @@ The other blocks will continue to add blocks just as the partition will add its 
 Now, what happens if a computer cheats? Can you build a cheat-resistant timer?
 You can use cryptography or trusted computing module.
 
-# Video 14 - https://youtu.be/MVPkHPEsC4Y
+## Video 14 - https://youtu.be/MVPkHPEsC4Y ##
 Should you use Bitcoin consensus?
 
 Despite the virtues that Bitcoin offers, it is not a replacement for other algorithms such as PAXOS, since at the end of the day for Bitcoin to work properly it requires a large number of users and that these are safe users.
 
 In addition, if Bitcoin is compared with other algorithms, we find that the latter have greater efficiency and effectiveness in terms of performance. Another limitation of Bitcoin in the time it takes to permanently save the information of a block, as this is saved in the next. With this in mind it seems obvious that Bitcoin will have a higher electricity consumption, but it is more than we can think at first, it is not only the amount of computers that are in use, but also the time that they are really active.
 
-# Video 15 - https://youtu.be/W6qURtqrldc
+## Video 15 - https://youtu.be/W6qURtqrldc ##
 Distributed System Design Example (Unique ID)
 
 For a large-scale distributed system, the existence of a unique transaction identifier is useful for the different computers that make up the network. So how is a unique identifier achieved? A good way to do this is to use the smallest unit of time we have available and concatenate it with an identifier of the computer such as the series of our processor, IP, or MAC address, but if we think about it carefully, there is no efficient way to achieve it in a distributed way because to ensure that the unique identifier requires asking and confirming with the other servers which always generates an increase in network traffic, so we can always use the UUID functions or GUID, which are offered by operating systems to obtain a unique identifier.
 
-# Video 16 The CAP Theorem https://youtu.be/k-Yaq8AHlFA
+## Video 16 The CAP Theorem https://youtu.be/k-Yaq8AHlFA ##
 CAP theorem states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees:
 
 Consistency: Every read receives the most recent write or an error.
@@ -157,7 +159,7 @@ Partition tolerance: The system continues to operate despite an arbitrary number
 In the video, we present an example of two ATMs, which communicate the deposits with each other. If you are going to make an action to the ATM A or if there is no connection to the ATM B and it does not work you can simply show a message of unavailable. Or if even worse, if both fell they work but there is no communication, then a partition is created.
 When you design your system if there never are partitions you can make the system both consisten and available, but if there's a partition you've got to choose. You either have a consistent design, or an available design.
 
-## Authors
+## Authors ##
 
 * **Jose Arellano** - [Github](https://github.com/Arellano1995)
 * **Lilia Rosales** - [Github](https://github.com/liliarsis)
