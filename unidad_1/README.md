@@ -1,5 +1,7 @@
 
-# Summary of the videos
+#Introduction to Distributed Systems
+
+## Table Of Contents
 - [What is a distributed system?](#what-is-a-distributed-system) 
 - [Why build a distributed system?](#why-build-a-distributed-system)
 - [How to learn distributed systems](#how-to-learn-distributed-systems)
@@ -16,6 +18,7 @@
 - [Should you use Bitcoin consensus?](#should-you-use-bitcoin-consensus)
 - [Distributed System Design Example](#distributed-system-design-example)
 - [The CAP Theorem](#the-cap-theorem)
+- [Authors](#authors)
 
 ## What is a distributed system ## 
 The first video is an introduction to distributed computing, it gives us the definition of distributed computing and its advantages,
