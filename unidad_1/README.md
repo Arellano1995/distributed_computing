@@ -9,7 +9,13 @@
 - [SLIs SLOs and SLAs](#slis-slos-and-slas)
 - [Class Project](#class-project)
 - [Paxos Simplified](#paxos-simplified)
-- [How Counterstrike Works (Time in Distributed Systems)](#How Counterstrike Works (time-in-distributed-systems))
+- [How Counterstrike Works](#how-counterstrike-works)
+- [Introduction to Blockchain Consensus](#introduction-to-blockchain-consensus)
+- [What is a Blockchain?](#what-is-a-blockchain?)
+- [Bitcoin Blockchain Consensus](#bitcoin-blockchain-consensus)
+- [Should you use Bitcoin consensus?](#should-you-use-bitcoin-consensus?)
+- [Distributed System Design Example](#distributed-system-design-example)
+- [The CAP Theorem](#the-cap-theorem)
 
 ## What is a distributed system? ## 
 The first video is an introduction to distributed computing, it gives us the definition of distributed computing and its advantages,
@@ -85,7 +91,7 @@ How to Divide many failures into categories
 Consider a network where a node is connected to a different node. If a node goes down, we loss connectivity between one sub graph and the other sub graph. The components of system can run but can't communicate each other. You can create a code where when Communication resumes, the processes they had may somehow, weave the system back again it's called "tolerating a consistent state".
 [Youtube ](https://youtu.be/MnYlwjuGcg8)
 
-## VByzantine Fault Tolerance ##
+## Byzantine Fault Tolerance ##
 Byzantine Fault Tolerance  
 
 This fault tolerance system is very useful, especially in distributed systems where there are a large number of components or nodes in the game, so when some of these nodes fail or are violated, algorithms such as: PoW (Job Test) are used. and PoS (Stake Test), these works with the logic of the Byzantine generals, that in a nutshell, each node receives an order, and, in turn, this node issues the same order to the other nodes, even if a node will fail and deliver a different result, the correct result can be determined, assuming that the result that appears most frequently is correct.
