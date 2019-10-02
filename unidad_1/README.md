@@ -1,6 +1,15 @@
 
 # Summary of the videos
-[Video 1 ](#what-is-a-distributed-system?) 
+- [What is a distributed system?](#what-is-a-distributed-system?) 
+- [Why build a distributed system?](#why-build-a-distributed-system?)
+- [How to learn distributed systems](#how-to-learn-distributed-systems)
+- [What could go wrong?](#what-could-go-wrong?)
+- [The many types of fail](#the-many-types-of-fail)
+- [Byzantine Fault Tolerance](#byzantine-fault-tolerance)
+- [SLIs SLOs and SLAs](#slis-slos-and-slas)
+- [Class Project](#class-project)
+- [Paxos Simplified](#paxos-simplified)
+- [How Counterstrike Works (Time in Distributed Systems)](#How Counterstrike Works (time-in-distributed-systems))
 
 ## What is a distributed system? ## 
 The first video is an introduction to distributed computing, it gives us the definition of distributed computing and its advantages,
