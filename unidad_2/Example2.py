@@ -26,6 +26,9 @@ if __name__ == "__main__":
     t1.join()
     # wait until thread 2 is completely executed
     t2.join()
+    """
+    If it is not added, the thread does not close, and continues to execute code
+    """
  
     # both threads completely executed
     print("Done!")
