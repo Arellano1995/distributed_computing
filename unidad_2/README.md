@@ -8,3 +8,6 @@ When using threads for the realization of an asynchronous system allows us to as
 ## Corutins with performance
 Corutins are generalizations of subroutines. They are used for multiprocessing where a process voluntarily cedes control periodically or when it is idle to allow multiple applications to run simultaneously.
 Corutins resemble generators, while generators produce data for iteration, corutins can also consume data.
+
+##Asynchronous Programming
+With Asynchronous Programming the OS is not envolved. Python introduced a new concurrency model named Asyncio. Asyncio is designed to use coroutines and futures to simplify asynchronous code and make it almost as readable as synchronous code as there are no callbacks.
