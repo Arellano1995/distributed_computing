@@ -2,7 +2,39 @@
 
 ## Table Of Contents
 - [Asynchronous programming with python](#asynchronous-programming-with-python)
-- [Authors](#authors)
+  - [Introduction](#Introduction)
+  - [Multiple Threads](#Multiple-Threads)
+  - [Corutins with performance](#Corutins-with-performance)
+  - [Asynchronous Programming](#Asynchronous-Programming)
+- [Async-io complete](#Async-io-complete)
+  - [ Setting Up Your Environment](#Setting-Up-Your-Environment)
+  - [The 10,000-Foot View of Async IO](#The-10,000-Foot-View-of-Async-IO)
+    - [Where Does Async IO Fit In?](#Where-Does-Async-IO-Fit-In?)
+    - [Async IO Explained](#Async-IO-Explained)
+    - [Async IO Is Not Easy](#Async-IO-Is-Not-Easy)
+  - [The asyncio Package and async/await](#The-asyncio-Package-and-async/await)
+    - [The async/await Syntax and Native Coroutines](#The-async/await-Syntax-and-Native-Coroutines)
+    - [The Rules of Async IO](#The-Rules-of-Async-IO)
+  - [Async IO Design Patterns](#Async-IO-Design-Patterns)
+    - [Chaining Coroutines](#Chaining-Coroutines)
+    - [Using a Queue](#Using-a-Queue)
+  - [Async IO’s Roots in Generators](#Async-IO’s-Roots-in-Generators)
+    - [Other Features: async for and Async Generators + Comprehensions](#Other-Features:-async-for-and-Async-Generators-+-Comprehensions)
+    - [The Event Loop and asyncio.run()](#The-Event-Loop-and-asyncio.run())
+  - [A Full Program: Asynchronous Requests](#A-Full-Program:-Asynchronous-Requests)
+  - [Async IO in Context](#Async-IO-in-Context)
+    - [When and Why Is Async IO the Right Choice?](#When-and-Why-Is-Async-IO-the-Right-Choice?)
+    - [Async IO It Is, but Which One?](#Async-IO-It-Is,-but-Which-One?)
+  - [Odds and Ends](#Odds-and-Ends)
+    - [Other Top-Level asyncio Functions](#Other-Top-Level-asyncio-Functions)
+    - [The Precedence of await](#The-Precedence-of-await)
+  - [Conclusion](#Conclusion)
+  - [Resources](#Resources)
+    - [Python Version Specifics](#Python-Version-Specifics)
+    - [Articles](#Articles)
+    - [Related PEPs](#Related-PEPs)
+    - [Libraries That Work With async/await](#Libraries-That-Work-With-async/await)
+
 
 # Asynchronous programming with python
 ## Introduction
@@ -17,4 +49,13 @@ Corutins resemble generators, while generators produce data for iteration, corut
 
 ## Asynchronous Programming
 With Asynchronous Programming the OS is not envolved. Python introduced a new concurrency model named Asyncio. Asyncio is designed to use coroutines and futures to simplify asynchronous code and make it almost as readable as synchronous code as there are no callbacks.
+
 # Async-io complete
+## Setting Up Your Environment
+
+## The 10,000-Foot View of Async IO
+### Where Does Async IO Fit In?
+### Async IO Explained
+### Async IO Is Not Easy
+
+
