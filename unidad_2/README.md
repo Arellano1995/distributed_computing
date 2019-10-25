@@ -52,7 +52,7 @@ With Asynchronous Programming the OS is not envolved. Python introduced a new co
 
 # Async-io complete
 ## Setting Up Your Environment
-
+This section of the course will require Python 3 and the configuration of a virtual environment and the AioHttp and AioFiles packages
 ## The 10,000-Foot View of Async IO
 ### Where Does Async IO Fit In?
 ### Async IO Explained
