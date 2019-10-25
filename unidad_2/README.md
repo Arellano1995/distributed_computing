@@ -53,8 +53,18 @@ With Asynchronous Programming the OS is not envolved. Python introduced a new co
 # Async-io complete
 ## Setting Up Your Environment
 This section of the course will require Python 3 and the configuration of a virtual environment and the AioHttp and AioFiles packages
-## The 10,000-Foot View of Async IO
+### Basic Concepts
+
+-Parallelism. It consists of performing multiple operations at the same time.
+-Concurrence. Concurrence is when two tasks can begin, execute and complete overlapping time periods. (There is a saying that concurrence does not imply parallelism).
+
+-Multiprocessing is a means to effect parallelism, and it entails spreading tasks over a computer’s central processing units (CPUs, or cores). Multiprocessing is well-suited for CPU-bound tasks: tightly bound for loops and mathematical computations usually fall into this category.
+
+-Threading is a concurrent execution model whereby multiple threads take turns executing tasks.
+
 ### Where Does Async IO Fit In?
+Over the last few years, a separate design has been more comprehensively built into CPython: Async IO. This works as a library to write concurrent code. However, Async IO does not use Threading, nor is it multiprocessing. It is not built on any of these.
+
 ### Async IO Explained
 ### Async IO Is Not Easy
 
