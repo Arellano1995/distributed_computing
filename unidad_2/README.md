@@ -19,9 +19,9 @@
     - [Chaining Coroutines](#Chaining-Coroutines)
     - [Using a Queue](#Using-a-Queue)
   - [Async IO’s Roots in Generators](#Async-IO’s-Roots-in-Generators)
-    - [Other Features: async for and Async Generators + Comprehensions](#Other-Features:-async-for-and-Async-Generators-+-Comprehensions)
+    - [Other Features: async for and Async Generators + Comprehensions](#Other-Features-async-for-and-Async-Generators-+-Comprehensions)
     - [The Event Loop and asyncio.run()](#The-Event-Loop-and-asyncio.run())
-  - [A Full Program: Asynchronous Requests](#A-Full-Program:-Asynchronous-Requests)
+  - [A Full Program: Asynchronous Requests](#A-Full-Program-Asynchronous-Requests)
   - [Async IO in Context](#Async-IO-in-Context)
     - [When and Why Is Async IO the Right Choice?](#When-and-Why-Is-Async-IO-the-Right-Choice?)
     - [Async IO It Is, but Which One?](#Async-IO-It-Is,-but-Which-One?)
@@ -66,6 +66,10 @@ This section of the course will require Python 3 and the configuration of a virt
 Over the last few years, a separate design has been more comprehensively built into CPython: Async IO. This works as a library to write concurrent code. However, Async IO does not use Threading, nor is it multiprocessing. It is not built on any of these.
 
 ### Async IO Explained
+Async IO may seem contradictory and paradoxical. How can you provide concurrent code, if you use only one thread and a single CPU core?
+Async IO allows the cycle of events of a program to communicate with multiple tasks, to allow each one to take turns at the OPTIMAL MOMENT.
+Async IO entails long waiting periods in which the functions would be locked and allows other functions to be executed during that downtime.
+
 ### Async IO Is Not Easy
 
 
