@@ -71,5 +71,4 @@ Async IO allows the cycle of events of a program to communicate with multiple ta
 Async IO entails long waiting periods in which the functions would be locked and allows other functions to be executed during that downtime.
 
 ### Async IO Is Not Easy
-
-
+Be warned, the truth is that building durable multithreaded code can be hard and error-prone, async programming can be difficult too. But that’s not to say that async IO in Python is easy.
