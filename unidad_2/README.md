@@ -72,3 +72,36 @@ Async IO entails long waiting periods in which the functions would be locked and
 
 ### Async IO Is Not Easy
 Be warned, the truth is that building durable multithreaded code can be hard and error-prone, async programming can be difficult too. But that’s not to say that async IO in Python is easy.
+
+## The asyncio Package and async/await
+Let’s explore Python’s implementation. Python’s asyncio package (introduced in Python 3.4) and its two keywords, async and await, serve different purposes but come together to help
+
+### The async/await Syntax and Native Coroutines
+#### Example1.py
+The order of this output is the heart of async IO. Talking to each of the calls to count() is a single event loop, or coordinator. When each task reaches await asyncio.sleep(1). In contrast the synchronous version, time.sleep() and asyncio.sleep() may seem banal, they are used as stand-ins for any time-intensive processes that involve wait time. The benefit of awaiting something, including asyncio.sleep(), is that the surrounding function can temporarily cede control to another function that’s more readily able to do something immediately. In contrast, time.sleep() or any other blocking call is incompatible with asynchronous Python code.
+
+### The Rules of Async IO
+The syntax async def introduces either a native coroutine or an asynchronous generator. The expressions async with and async for are also valid. 
+The keyword await passes function control back to the event loop. If Python encounters an await f() expression in the scope of g(), this is how await tells the event loop, “Suspend execution of g() until whatever I’m waiting on—the result of f()—is returned. In the meantime, go let something else run.”
+
+async def g():
+    //Pause here and come back to g() when f() is ready
+    r = await f()
+    return r
+    
+#### Example2.py
+IO cuts down on wait time: given a coroutine makerandom() that keeps producing random integers in the range [0, 10], until one of them exceeds a threshold, you want to let multiple calls of this coroutine not need to wait for each other to complete in succession.
+
+## Async IO Design Patterns
+### Chaining Coroutines
+#### Example3.py
+A key feature of coroutines is that they can be chained together. This allows you to break programs into smaller, manageable, recyclable coroutines.
+
+part1() sleeps for a variable amount of time, and part2() begins working with the results as they become available. In this setup, the runtime of main() will be equal to the maximum runtime of the tasks that it gathers together and schedules.
+
+### Using a Queue
+The asyncio package provides queue classes that are designed to be similar to classes of the queue module. There is an alternative structure that can also work with async IO: a number of producers, which are not associated with each other, add items to a queue. In this design, there is no chaining of any individual consumer to a producer. It takes an individual producer or consumer a variable amount of time to put and extract items from the queue, respectively.
+#### queue.py
+The challenging part of this workflow is that there needs to be a signal to the consumers that production is done. Otherwise, await q.get() will hang indefinitely.
+
+The first few coroutines are helper functions that return a random string, a fractional-second performance counter, and a random integer.
